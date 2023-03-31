@@ -6,17 +6,17 @@ a {
     text-decoration: none;
 }
 
-.nav-header {
+.topbar {
     margin: 1rem 3rem;
     padding: 2rem;
 
     display: flex;
-    flex-wrap: nowrap;
+    
 }
 
-.nav-header > .nav-topbar-links{
-    text-align: center;
-    justify-content: center;
+.topbar-links {
+    
+
 }
 
 #inicio,
