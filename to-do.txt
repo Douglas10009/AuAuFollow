@@ -1,0 +1,2 @@
+- Tirar a página de login no início do site
+- Organizar essas pastas

@@ -1,0 +1,78 @@
+/* produtos.css */
+
+header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.imagem1,
+.imagem2,
+.imagem3,
+.imagem4,
+.imagem5,
+.imagem6 {
+  text-align: center;
+}
+
+.imagem1 img,
+.imagem2 img,
+.imagem3 img,
+.imagem4 img,
+.imagem5 img,
+.imagem6 img {
+  width: 200px;
+  height: 200px;
+}
+
+.imagem1 h3,
+.imagem2 h3,
+.imagem3 h3,
+.imagem4 h3,
+.imagem5 h3,
+.imagem6 h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.imagem1 p,
+.imagem2 p,
+.imagem3 p,
+.imagem4 p,
+.imagem5 p,
+.imagem6 p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.imagem1 .bold,
+.imagem2 .bold,
+.imagem3 .bold,
+.imagem4 .bold,
+.imagem5 .bold,
+.imagem6 .bold {
+  font-weight: bold;
+}
+
+.imagem1 .btn,
+.imagem2 .btn,
+.imagem3 .btn,
+.imagem4 .btn,
+.imagem5 .btn,
+.imagem6 .btn {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #6AA6F9;
+  border-radius : px;
+  text-decoration: none;
+  color: #333;
+}
+

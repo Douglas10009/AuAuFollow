@@ -1,0 +1,210 @@
+.body{
+  background-color: #ebf5ff;
+  font-size: 15px;
+  font-family: 'Bebas Neue', cursive;
+} 
+
+.topbar{
+  position: absolute;
+  top: 0px;
+  left: 50px;
+}
+
+.main-conteiner{
+  background-color: grey;
+  width: 1420px;
+  height: 730px;
+}
+
+.produto-conteiner{
+  background-color: pink;
+  width: 1420px;
+  height: 730px;
+}
+
+.produto-conteiner h1{
+  font-size: 50px;
+  
+  position: relative;
+  left: 500px;
+  top: 90px;
+}
+
+.produto-conteiner div:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+.produto1{
+  background-color: red;
+  padding: 25px;
+  width: 192px;
+  height: 292px;
+  border-radius: 10%;
+  
+  position: relative;
+  top: 200px;
+  left: 60px;
+  
+  transition: 0.5s;
+}
+
+.produto2{
+  background-color: red;
+  padding: 25px;
+   width: 192px;
+  height: 292px;
+  border-radius: 10%;
+  
+  position: relative;
+  bottom: 150px;
+  left: 380px;
+
+  transition: 0.5s;
+}
+
+.produto3{
+  background-color: red;
+  padding: 25px;
+  width: 192px;
+  height: 292px;
+  border-radius: 10%;
+  
+  position: relative;
+  bottom: 500px;
+  left: 730px;
+
+  transition: 0.5s;
+}
+
+.produto4{
+  background-color: red;
+  padding: 25px;
+  width: 192px;
+  height: 292px;
+  border-radius: 10%;
+  
+  position: relative;
+  bottom: 850px;
+  left: 1060px;
+
+  transition: 0.5s;
+}
+
+.form-conteiner{
+  background-color: lightseagreen;
+  width: 1420px;
+  height: 730px;
+}
+
+.form-conteiner h1{
+  font-size: 40px;
+  
+  position: relative;
+  left: 500px;
+  top: 90px;
+}
+
+.formulario{
+  background-color: seagreen;
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+
+.formulario form{
+  position: relative;
+  top: 120px;
+  left: 100px;
+}
+
+.rodape-conteiner{
+  background-color: #3c3939;
+  width: 1420px;
+  height: 330px;
+}
+
+#tb_inicio{
+  position: absolute;
+  top: 40;
+  left: 450;
+}
+
+#tb_produto{
+  position: absolute;
+  top: 40px;
+  left: 650px;
+}
+
+#tb_raca{
+  position: absolute;
+  top: 40px;
+  left: 850px;  
+}
+
+#tb_suporte{
+  position: absolute;
+  top: 40px;
+  left: 1200px;
+}
+
+
+#main-opcao{
+  position: absolute;
+  top: 350px;
+  left: 200px;
+}
+
+#main-cachorro{
+  position: absolute;
+  top: 383;
+  left: 200;
+}
+
+#main-background-imagem{
+  background-color: blue;
+  width: 550px;
+  height: 550px;
+  border-radius: 500px;
+  
+  position: absolute;
+  top: 150px;
+  left: 700px;
+
+  transition: 0.5s;
+}
+
+#main-image{
+  width: 550px;
+  height: 550px;
+  
+  position: relative;
+  top: 100px;
+  left: 650px;
+
+  transition: 0.5s;
+}
+
+#main-background-image:hover , #main-image:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+#img_tapetehigienico{
+  position: relative;
+  left: 35px;
+}
+
+#form-gif{
+  position: relative;
+  bottom: 250px;
+  left: 700px;
+  border-radius: 50%;
+}
+
+
