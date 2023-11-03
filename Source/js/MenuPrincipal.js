@@ -24,6 +24,10 @@ class MenuPrincipal extends HTMLElement {
 
         <a href="../Source/pages/notfound.html" id="tb_suporte_menu"><img src="/Source/image/salva-vidas.png" width="50px" height="50px" /> </a>`
 
+        // const tpLinks = document.createElement('div');
+        // rp
+        // const inicio = document.createElement('a');
+
 
         return componentRoot
     }
