@@ -17,7 +17,6 @@ a {
 }
 
 .main,
-.topbar,
 .main-conteiner,
 .tp-links,
 #main-background-imagem,
@@ -43,38 +42,6 @@ a {
 	flex-direction: column;
 	justify-content: center;
 }
-
-.topbar {
-	justify-content: space-between;
-	align-items: center;
-}
-
-.tp-links {
-		width: 526px;
-	justify-content: space-between;
-}
-
-/* ELBERT  */
-.tp-links a {
-	padding: 9px 15px;
-	background-color: #6AA6F9;
-	color: #ffffff;
-	text-decoration: none;
-	border-radius: 9px;
-	transition: 1000ms;
-}
-
-.tp-links a:hover {
-
-	transition: 1000ms;
-	padding: 10px 50px;
-	transform: translateY(-0px);
-	background-color: white;
-	color: #6AA6F9;
-	border: solid 2px #6AA6F9;
-}
-
-/* ELBET */
 
 .main-conteiner {
 	padding: 0 0 10px;
@@ -206,7 +173,7 @@ a {
 	transition: 1s;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 668px) {
 	body {
 		overflow-x: hidden;
 		height: 100%;
@@ -231,11 +198,6 @@ a {
 		width: 100%;
 		flex-direction: column;
 		justify-content: space-between;
-	}
-
-	.topbar {
-		visibility: hidden;
-		display: none;
 	}
 
 	.main-conteiner {
