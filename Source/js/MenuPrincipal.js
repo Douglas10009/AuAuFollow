@@ -15,15 +15,14 @@ class MenuPrincipal extends HTMLElement {
         <a href="index.html" id="logo"><img src="/Source/image/logo.png" alt="logo da loja" width="115px"
           height="115px"></a>
 
-      <div class="tp-links">
-        <a href="/Source/dump/indexPosition.html" id="tb_inicio">INÍCIO</a>
-        <a href="/Source/pages/AUAU PRODUTOS/auauProdutos.html" id="tb_produto">PRODUTO</a>
-        <a href="/Source/pages/notfound.html" id="tb_raca">RAÇAS</a>
-        <a href="/Game/gamex.html" id="tb_jogo">JOGO</a>
-      </div>
+        <div class="tp-links">
+            <a href="/Source/dump/indexPosition.html" id="tb_inicio">INÍCIO</a>
+            <a href="/Source/pages/AUAU PRODUTOS/auauProdutos.html" id="tb_produto">PRODUTO</a>
+            <a href="/Source/pages/notfound.html" id="tb_raca">RAÇAS</a>
+            <a href="/Game/gamex.html" id="tb_jogo">JOGO</a>
+        </div>
 
-      <a href="../Source/pages/notfound.html" id="tb_suporte_menu"><img src="/Source/image/salva-vidas.png"
-          width="50px" height="50px" /> </a>`
+        <a href="../Source/pages/notfound.html" id="tb_suporte_menu"><img src="/Source/image/salva-vidas.png" width="50px" height="50px" /> </a>`
 
 
         return componentRoot
