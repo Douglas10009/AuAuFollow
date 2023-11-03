@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f1f1f1;
-  background-image: url(https://i.pinimg.com/originals/25/2c/7c/252c7c2432de5681751346f8af5d375c.png);
+  background-image: url("/Source/image/bbc_prod.png");
   margin: 0;
   padding: 0;
 }
@@ -32,7 +32,7 @@ body {
 .container button {
   width: 100%;
   padding: 10px;
-  background-color: #7dc9ff;
+  background-color: #e896db;
   color: #fff;
   border: none;
   border-radius: 3px;
