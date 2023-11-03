@@ -16,7 +16,7 @@ class MenuPrincipal extends HTMLElement {
           height="115px"></a>
 
         <div class="tp-links">
-            <a href="/principal" id="tb_inicio">INÍCIO</a>
+            <a href="/principal.html" id="tb_inicio">INÍCIO</a>
             <a href="/Source/pages/AUAU PRODUTOS/auauProdutos.html" id="tb_produto">PRODUTO</a>
             <a href="/Source/pages/notfound.html" id="tb_raca">RAÇAS</a>
             <a href="/Game/gamex.html" id="tb_jogo">JOGO</a>
