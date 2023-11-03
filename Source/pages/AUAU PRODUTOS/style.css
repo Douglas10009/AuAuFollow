@@ -1,206 +1,118 @@
-*{
-
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: helvetica;
-}
-
-
-
-
-/*cabeçalho*/
-
-/*header {
-    background-color: rgb(151, 130, 211);
-    color: white;
-    padding: 10px 0;
-}*/
-
 header {
-    position: relative; /* Adicionado para posicionamento relativo */
-    background-color: rgb(151, 130, 211);
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-/* Estilos para a logo no canto esquerdo superior */
-.top-logo {
-    font-size: 24px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-    position: absolute; /* Posicionamento absoluto */
-    top: 10px; /* Ajuste para a posição vertical */
-    left: 20px; /* Ajuste para a posição horizontal */
-}
-
-/* Estilos para o menu superior no canto direito */
-.top-menu ul {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-}
-
-.top-logo:hover {
-    transform: scale(1.1);
-}
-
-.top-menu li {
-    margin-right: 20px;
-}
-
-.top-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.top-menu a:hover {
-    color: #47009e;
-}
-
-
-
-
-/*.eight-site-menu{
-
-    background-color: rgb(151, 130, 211)  ;
-    color: rgb(151, 130, 211);
-    padding: 30px;
-    text-align: left;
-    border-bottom: 3px solid rgb(153, 101, 250);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-}  
-
-
-
-.link{
-
-    display: flex;
-    gap: 3rem;
-    position: fixed;
-    text-align: right;
-
-}*/
-
-
-
 
 /* grid de produtos */
-
-.container{
-background-image: url(../Source/image/papelclarocanino.jpg);
+.container {
+    background-image: url(../Source/image/papelclarocanino.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-  min-height: 60vh;
-padding: 50px;
+    min-height: 60vh;
+    padding: 50px;
 }
 
-.products-container{
+.products-container {
 
-max-width: 1200px;
-margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 
 
 }
 
-.card{
+.card {
 
-width: 31%;
-display: inline-block;
-margin: 1% 0,5%;
-padding: 15px;
+    width: 31%;
+    display: inline-block;
+    margin: 1% 0, 5%;
+    padding: 15px;
 }
 
-.product-image{
-height: 300px;
-width: 50%;
-margin-bottom: 10px;
-background-position: center;
-background-size: cover;
+.product-image {
+    height: 300px;
+    width: 50%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
 }
 
-#img-1{
+#img-1 {
 
-background-image:url(img/tapete_higienico-transformed.png);
+    background-image: url(img/tapete_higienico-transformed.png);
 }
 
-#img-2{
-background-image: url(img/raýýo_filhote-transformed.png);
+#img-2 {
+    background-image: url(img/raýýo_filhote-transformed.png);
 }
-#img-3{
-background-image: url(img/raýýo_adulto-transformed.png);
+
+#img-3 {
+    background-image: url(img/raýýo_adulto-transformed.png);
 }
-#img-4{
+
+#img-4 {
     background-image: url(img/escova_canina-transformed.jpg);
 }
-#img-5{
+
+#img-5 {
     background-image: url(img/secador_canino-transformed.png);
 }
-#img-6{
+
+#img-6 {
     background-image: url(img/cama-transformed.png);
 }
 
-h3{
+h3 {
 
-margin-bottom: 10px;
-color: rgb(39, 23, 84);
-border-left: 7px solid rgb(39, 23, 84);
-padding-left: 7px;
-font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(39, 23, 84);
+    border-left: 7px solid rgb(39, 23, 84);
+    padding-left: 7px;
+    font-size: 24px;
 }
 
-.card p{
+.card p {
 
-margin-bottom: 10px;
-
-}
-
-.bold{
-font-weight: bold;
+    margin-bottom: 10px;
 
 }
 
-.btn{
-display: block;
-width: 60%;
-text-transform: uppercase;
-text-decoration: none;
-text-align: center;
-background-color: rgb(151, 130, 211);
-color:white;
-padding: 15px;
-border-radius: 5px;
-transition: .5s;
-}
-
-.btn:hover{
-background-color: rgb(114, 85, 241)
+.bold {
+    font-weight: bold;
 
 }
-/* footer */
 
-footer{
-background-color: rgb(151, 130, 211);
-color: rgb(255, 255, 255);
-border-top: 3pix solid rgb(55, 98, 138);
-text-align: center;
-padding: 80px;
+.btn {
+    display: block;
+    width: 60%;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(151, 130, 211);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: .5s;
 }
 
-.p{
+.btn:hover {
+    background-color: rgb(114, 85, 241)
+}
 
-width: 10%;
+footer {
+    background-color: rgb(151, 130, 211);
+    color: rgb(255, 255, 255);
+    border-top: 3pix solid rgb(55, 98, 138);
+    text-align: center;
+    padding: 80px;
+}
+
+.p {
+
+    width: 10%;
 
 }

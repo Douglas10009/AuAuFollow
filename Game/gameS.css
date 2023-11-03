@@ -2,9 +2,36 @@
    margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.contador {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+   
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .game-board{
 
@@ -23,7 +50,7 @@ background: linear-gradient(#87CEEB, #E0F6FF)
     bottom: 0;
     width: 200px;
     right: -80px;
-    animation: osso-animation 1s infinite linear;
+    animation: osso-animation 1.5s infinite linear;
 }
 
 .lobo{
@@ -34,11 +61,26 @@ background: linear-gradient(#87CEEB, #E0F6FF)
     
 }
 
-.jump{
-
-animation: jump 500ms  ease-out;
-
+.jump {
+    animation-name: jump-animation;
+    animation-duration: 1s; /* Duração da animação em segundos */
+    animation-timing-function: ease-in-out; /* Aceleração e desaceleração suaves */
 }
+
+@keyframes jump-animation {
+    0% {
+        bottom: 0px; /* Posição inicial do lobo (no chão) */
+    }
+    50% {
+        bottom: 200px; /* Altura máxima do pulo (meio da animação) */
+    }
+    100% {
+        bottom: 0px; /* Posição final do lobo (de volta ao chão) */
+    }
+}
+
+
+
 
 .nuvens{
 position: absolute;
@@ -106,5 +148,5 @@ footer{
     color: aliceblue;
     border-top: 3pix solid rgb(55, 98, 138);
     text-align: center;
-    padding: 70px;
+    padding: 120px;
     }

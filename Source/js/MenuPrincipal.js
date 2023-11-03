@@ -12,7 +12,7 @@ class MenuPrincipal extends HTMLElement {
         componentRoot.setAttribute('class', 'topbar')
 
         componentRoot.innerHTML = `
-        <a href="index.html" id="logo"><img src="/Source/image/logo.png" alt="logo da loja" width="115px"
+        <a href="/principal.html" id="logo"><img src="/Source/image/logo.png" alt="logo da loja" width="115px"
           height="115px"></a>
 
         <div class="tp-links">
@@ -45,8 +45,8 @@ class MenuPrincipal extends HTMLElement {
 
         .tp-links a {
         	padding: 9px 15px;
-        	background-color: #6AA6F9;
-        	color: #ffffff;
+        	background-color: #DFCCF2;
+            color: #ffffff;
         	text-decoration: none;
         	border-radius: 9px;
         	transition: 1000ms;
@@ -57,8 +57,8 @@ class MenuPrincipal extends HTMLElement {
         	padding: 10px 50px;
         	transform: translateY(-0px);
         	background-color: white;
-        	color: #6AA6F9;
-        	border: solid 2px #6AA6F9;
+            color: #DFCCF2;
+            border: solid 2px #6AA6F9;
         }
         
         @media (max-width: 668px) {
