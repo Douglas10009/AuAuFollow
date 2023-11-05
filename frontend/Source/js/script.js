@@ -1,3 +1,4 @@
+// visibilidade da senha
 function togglePasswordVisibility() {
 	var passwordInput = document.getElementById("password");
 	var icone = document.getElementById("icone");
@@ -6,60 +7,55 @@ function togglePasswordVisibility() {
 	//Caso o tipo do input seja password (ocultado -> visível)
 	if (passwordInput.type === "password") {
 		passwordInput.type = "text";
-		icone.src = "Source/image/ocultar.png";
+		icone.src = "/frontend/Source/image/visivel.png";
 		p.textContent = "Ocultar senha"
 
 		//Caso o tipo do input seja text (visivel -> ocultado)
 	} else {
 		passwordInput.type = "password";
-		icone.src = "Source/image/visivel.png";
+		icone.src = "/frontend/Source/image/ocultar.png";
 		p.textContent = "Mostrar senha"
 	}
 }
 
-// Event listener para o botão
-document.getElementById('btnRedirect').addEventListener('click', function () {
-	console.log(window.location.href);
-	window.location.href = "/frontend/principal.html";
-	console.log(window.location.href);
+const pwVisibility = document.getElementById('TogglePwVisibility')
+pwVisibility.addEventListener('click', togglePasswordVisibility);
+
+
+
+// Acesso aos clientes
+
+const fetchClientes = async () => {
+	const response = await fetch('http://localhost:8080/clientes');
+	const clientes = response.json();
+	return clientes
+}
+
+document.getElementById('btnRedirect').addEventListener('click', async (event) => {
+	event.preventDefault();
+	const clientes = await fetchClientes();
+
+	var exists = false;
+
+	clientes.forEach(cliente => {
+		const { email, senha } = cliente;
+		console.log(cliente); // Apagar isso
+
+		if (document.getElementById('email').value === email && document.getElementById('senha').value === senha) {
+			exists = true;
+		} 
+	});
+
+	if (exists) {
+		alert('Login correto')
+
+		document.getElementById('email').value = ""
+		document.getElementById('senha').value = ""
+
+		window.location.href = "/frontend/principal.html";
+
+	} else {
+		alert('Email ou senha incorretos')
+	}
 });
 
-
-// let express = require('express')
-// let mysql = require('mysql2')
-// let conexao = mysql.createConnection({
-// 	host: 'localhost',
-// 	user: 'root',
-// 	password: '1234',
-// 	database: 'auaufollowstore'
-// });
-
-// function togglePasswordVisibility() {
-// 	var passwordInput = document.getElementById("password");
-// 	var icone = document.getElementById("icone");
-// 	var p = document.querySelector("span > p");
-
-// 	//Caso o tipo do input seja password (ocultado -> visível)
-// 	if (passwordInput.type === "password") {
-// 		passwordInput.type = "text";
-// 		icone.src = "Source/image/ocultar.png";
-// 		p.textContent = "Ocultar senha"
-
-// 		//Caso o tipo do input seja text (visivel -> ocultado)
-// 	} else {
-// 		passwordInput.type = "password";
-// 		icone.src = "Source/image/visivel.png";
-// 		p.textContent = "Mostrar senha"
-// 	}
-// }
-
-// function connectDatabase() {
-// 	console.log('Connection estabilished...')
-
-// 	conexao.query( // Buscando dados
-// 		'select * from clientes',
-// 		(erro, result) => {
-// 			console.log(result)
-// 		}
-// 	)
-// }

@@ -17,16 +17,20 @@
 		<h2>Bem Vindo a AuAuStore !</h2>
 
 		<form>
-			<input type="text" placeholder="Usuário" name="username">
-			<input type="password" placeholder="Senha" name="password" id="password">
-			<span onclick="togglePasswordVisibility()">
+			<input type="email" placeholder="Email" name="email" id="email" required>
+			<input type="password" placeholder="Senha" name="senha" id="senha">
+
+			<span id="TogglePwVisibility">
 				<img src="/frontend/Source/image/ocultar.png" style="margin: 5px; width: 15px;" id="icone">
 				<p>Mostrar senha</p>
 			</span>
+
 			</br>
-			<button id="btnRedirect" type="button" onclick="connectDatabase()">Login</button>
+
+			<button id="btnRedirect" type="submit">Login</button>
 		</form>
 	</div>
+
 	<script src="frontend/Source/js/script.js"></script>
 </body>
 
