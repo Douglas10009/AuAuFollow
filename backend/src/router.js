@@ -9,10 +9,10 @@ const router = express.Router();
 const tasksController = require('./controllers/tasksController');
 const tasksMiddleware = require('./middlewares/tasksMiddleware');
 
-router.get('/tasks', tasksController.getAll);
-router.post('/tasks', tasksMiddleware.validateFieldBody , tasksController.createTask);
-router.delete('/tasks/:id', tasksController.deleteTask);
-router.put('/tasks/:id',tasksMiddleware.validateFieldBody, tasksMiddleware.validateFieldStatus , tasksController.updateTask);
+router.get('/clientes', tasksController.getAll); //Read
+router.post('/clientes', tasksMiddleware.validateFieldNome, tasksMiddleware.validateFieldEmail, tasksMiddleware.validateFieldSenha ,tasksController.createCliente); //Create
+router.delete('/clientes/:id', tasksController.deleteCliente); // Delete 
+router.put('/clientes/:id', tasksMiddleware.validateFieldNome, tasksMiddleware.validateFieldEmail, tasksMiddleware.validateFieldSenha , tasksController.updateCliente); // Update
 
 
 

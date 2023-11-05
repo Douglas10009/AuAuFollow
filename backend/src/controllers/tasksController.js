@@ -13,33 +13,35 @@ const getAll = async (_request, response) => {
 
     // Retorna para a rota as tasks 
     return response.status(200).json(tasks);
+
+    // response.send('<h1>Working</h1>');
 };
 
-const createTask = async (request, response) => {
-    const createdTask = await tasksModel.createTask(request.body);
-    return response.status(201).json(createdTask);
+const createCliente = async (request, response) => {
+    const createdCliente = await tasksModel.createCliente(request.body);
+    return response.status(201).json(createdCliente);
 };
 
-const deleteTask = async (req, res) => {
+const deleteCliente = async (req, res) => {
     // Retira dos parametros da requisição o ID dela (valor que é o mesmo do taskModels)
     const {id} = req.params;
 
-    await tasksModel.deleteTask(id);
+    await tasksModel.deleteCliente(id);
 
     return res.status(204).json();
 };
 
-const updateTask = async (req, res) => {
+const updateCliente = async (req, res) => {
     const {id} = req.params;
 
-    await tasksModel.updateTask(id, req.body);
+    await tasksModel.updateCliente(id, req.body);
 
     return res.status(204).json();
 };
 
 module.exports = {
     getAll,
-    createTask,
-    deleteTask,
-    updateTask
+    createCliente,
+    deleteCliente,
+    updateCliente
 };

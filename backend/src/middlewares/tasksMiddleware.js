@@ -2,30 +2,44 @@
 // Esse arquivo serve para validar os dados
 // -- 
 
-const validateFieldBody = (request, response, next) => {
+const validateFieldNome = (request, response, next) => {
     const {body} = request;
 
-    if (body.title === undefined) {
-        return response.status(400).json({message: 'The field title is required'});
+    if (body.nome === undefined) {
+        return response.status(400).json({message: 'The field nome is required'});
     }
 
-    if (body.title === '' || body.title === ' ') {
-        return response.status(400).json({ message: 'The Field title cannot be empty' });
+    if (body.nome === '' || body.nome === ' ') {
+        return response.status(400).json({ message: 'The Field nome cannot be empty' });
     }
 
     // Passar para o próximo
     next();
 };
 
-const validateFieldStatus = (request, response, next) => {
+const validateFieldEmail = (request, response, next) => {
     const { body } = request;
 
-    if (body.status === undefined) {
-        return response.status(400).json({ message: 'The field status is required' });
+    if (body.email === undefined) {
+        return response.status(400).json({ message: 'The field email is required' });
     }
 
-    if (body.status === '' || body.status === ' ') {
-        return response.status(400).json({ message: 'The Field status cannot be empty' });
+    if (body.email === '' || body.email === ' ') {
+        return response.status(400).json({ message: 'The Field email cannot be empty' });
+    }
+    // Passar para o próximo
+    next();
+};
+
+const validateFieldSenha = (request, response, next) => {
+    const { body } = request;
+
+    if (body.senha === undefined) {
+        return response.status(400).json({ message: 'The field senha is required' });
+    }
+
+    if (body.senha === '' || body.senha === ' ') {
+        return response.status(400).json({ message: 'The Field senha cannot be empty' });
     }
     // Passar para o próximo
     next();
@@ -34,6 +48,7 @@ const validateFieldStatus = (request, response, next) => {
 
 // Define quais métodos devem ser exportados
 module.exports = {
-    validateFieldBody,
-    validateFieldStatus
+    validateFieldNome,
+    validateFieldEmail,
+    validateFieldSenha
 };
