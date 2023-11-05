@@ -7,9 +7,8 @@ const connection = require('./connetion');
 
 // Acessar o banco de dados e retornar
 const getAll =  async () => {
-    // array destruction
     // Retorna somente a primeira posição do array
-    const [tasks] = await connection.execute('SELECT * FROM clientes');// ele espera uma query em sql
+    const [tasks] = await connection.execute('SELECT * FROM clientes');
     return tasks;
 };
 
@@ -19,7 +18,7 @@ const createCliente = async (cliente) => {
     const query = 'INSERT INTO clientes(nome,email,senha) VALUES (?,?,?)';
     const [createdCliente] = await connection.execute(query, [nome,email,senha]);
     
-    // Para retornar somente o 'insertId' da requisição
+    // Para retornar somente o 'insertId' da requisição -> Limpar o request
     return {insertId: createdCliente.insertId};
 };
 
@@ -28,9 +27,9 @@ const deleteCliente = async (id) => {
     return removedCliente;
 };
 
-const updateCliente = async (id, task) => {
+const updateCliente = async (id, cliente) => {
     // What about a updated_at?
-    const { nome,email, senha } = task;
+    const { nome,email, senha } = cliente;
 
     const updatedCliente = (await connection.execute('UPDATE clientes SET nome=?, email = ?, senha = ? WHERE id=?', [nome,email,senha, id]));
 
