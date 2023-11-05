@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AuAu Store</title>
+  <link rel="shortcut icon" href="Source/image/favicon/icons8-cachorro-64.png" type="image/x-icon">
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="Source/style/style.css">
+  <link rel="stylesheet" href="./Source/style/style.css">
   <link href="https://api.fontshare.com/v2/css?f[]=chillax@300,700,400&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas-Neue">
 
   <!-- Web Component dos produtos -->
-  <script src="Source/js/ProdutosCaninos.js" defer></script>
-  <script src="/Source/js/MenuPrincipal.js" defer></script>
+  <script src="./Source/js/components/ProdutosCaninos.js" defer></script>
+  <script src="./Source/js/components/MenuPrincipal.js" defer></script>
 
   <!-- Normalize CSS - Para manter o CSS padronizado entre navegadores -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -47,7 +48,7 @@
 
       <div class="main-imagem">
         <div id="main-background-imagem">
-          <img id="main-image" src="../Source/image/dog_bc.png" width="400px"/>
+          <img id="main-image" src="./Source/image/dog_bc.png" width="400px"/>
         </div>
       </div>
     </div>
@@ -59,26 +60,26 @@
     <div class="produtos-grid">
       
       <produtos-caninos 
-      linkImage="../Source/image/tapete_higienico.png" 
+      linkImage="./Source/image/tapete_higienico.png" 
       titleProduct="Tapete higienico" 
       description='Tapete Higiênico Clean Pads (85X60), 30 Unidades São Francisco Pet para Cães, 85x60cm'
       price='79,00 (R$79,00 / unidade)'
       imgStyle= "width: 80px;"></produtos-caninos>
 
       <produtos-caninos 
-      linkImage="../Source/image/ração-filhotes.png" 
+      linkImage="./Source/image/ração-filhotes.png" 
       titleProduct="Ração para filhotes" 
       description='Ração Pedigree para Cães Filhotes de Porte Médio e Grande Sabor Carne, Frango e Cereais'
       price='174,39'></produtos-caninos>
 
       <produtos-caninos 
-      linkImage="../Source/image/ração.png" 
+      linkImage="./Source/image/ração.png" 
       titleProduct="Ração Pedigree" 
       description='Ração Pedigree Nutrição Essencial Carne para Cães Adultos'
       price='154,99'></produtos-caninos>
 
       <produtos-caninos 
-      linkImage="../Source/image/escova-cachorro.png" 
+      linkImage="./Source/image/escova-cachorro.png" 
       titleProduct="Escova canina" 
       description='Escova Dupla Savana com Bolinhas nas Cerdas e Cabo de Madeira'
       price='19,99'></produtos-caninos>
@@ -115,7 +116,7 @@
     </div>
 
     <div class="image-form">
-      <img src="../Source/image/cachorro-coracao.jfif" id="form-gif" width="500px" height="500px">
+      <img src="./Source/image/cachorro-coracao.jfif" id="form-gif" width="500px" height="500px">
     </div>
   </div>
 
@@ -129,7 +130,7 @@
     </div>
 
     <div class="img-rodape">
-      <a href="index.html" id="logo"><img src="../Source/image/logo.png" alt="logo da loja" width="115px"
+      <a href="principal.html" id="logo"><img src="./Source/image/logo.png" alt="logo da loja" width="115px"
           height="115px"></a>
     </div>
   </div>

@@ -12,17 +12,17 @@ class MenuPrincipal extends HTMLElement {
         componentRoot.setAttribute('class', 'topbar')
 
         componentRoot.innerHTML = `
-        <a href="/principal.html" id="logo"><img src="/Source/image/logo.png" alt="logo da loja" width="115px"
+        <a href="/frontend/principal.html" id="logo"><img src="/frontend/Source/image/logo.png" alt="logo da loja" width="115px"
           height="115px"></a>
 
         <div class="tp-links">
-            <a href="/principal.html" id="tb_inicio">INÍCIO</a>
-            <a href="/Source/pages/AUAU PRODUTOS/auauProdutos.html" id="tb_produto">PRODUTO</a>
-            <a href="/Source/pages/notfound.html" id="tb_raca">RAÇAS</a>
-            <a href="/Game/gamex.html" id="tb_jogo">JOGO</a>
+            <a href="/frontend/principal.html" id="tb_inicio">INÍCIO</a>
+            <a href="/frontend/Source/pages/AUAU PRODUTOS/auauProdutos.html" id="tb_produto">PRODUTO</a>
+            <a href="/frontend/Source/pages/notfound.html" id="tb_raca">RAÇAS</a>
+            <a href="/frontend/Game/gamex.html" id="tb_jogo">JOGO</a>
         </div>
 
-        <a href="../Source/pages/notfound.html" id="tb_suporte_menu"><img src="/Source/image/salva-vidas.png" width="50px" height="50px" /> </a>`
+        <a href="/frontend/Source/pages/notfound.html" id="tb_suporte_menu"><img src="/frontend/Source/image/salva-vidas.png" width="50px" height="50px"/> </a>`
 
         // const tpLinks = document.createElement('div');
         // rp

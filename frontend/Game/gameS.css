@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.contador {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.game-board {
+
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #018b24;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF)
+}
+
+.osso {
+
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    right: -80px;
+    animation: osso-animation 1.5s infinite linear;
+}
+
+.lobo {
+
+    width: 250px;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.jump {
+    animation-name: jump-animation;
+    animation-duration: 1s;
+    /* Duração da animação em segundos */
+    animation-timing-function: ease-in-out;
+    /* Aceleração e desaceleração suaves */
+}
+
+@keyframes jump-animation {
+    0% {
+        bottom: 0px;
+        /* Posição inicial do lobo (no chão) */
+    }
+
+    50% {
+        bottom: 200px;
+        /* Altura máxima do pulo (meio da animação) */
+    }
+
+    100% {
+        bottom: 0px;
+        /* Posição final do lobo (de volta ao chão) */
+    }
+}
+
+
+
+
+.nuvens {
+    position: absolute;
+    width: 650px;
+    animation: nuvens-animation 20s infinite linear;
+
+}
+
+@keyframes osso-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+
+        bottom: 180px;
+    }
+
+    50% {
+
+        bottom: 180px;
+    }
+
+    60% {
+
+        bottom: 180px;
+    }
+
+    100% {
+
+        bottom: 0;
+    }
+
+}
+
+@keyframes nuvens-animation {
+
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+
+footer {
+    background-color: rgb(53, 29, 3);
+    color: aliceblue;
+    border-top: 3pix solid rgb(55, 98, 138);
+    text-align: center;
+    padding: 120px;
+}

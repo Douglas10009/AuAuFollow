@@ -3,14 +3,14 @@
 
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" href="login.css">
-	<link rel="icon" type="image/x-icon" href="Source/image/favicon/login.png">
+	<link rel="stylesheet" href="frontend/Source/style/login.css">
+	<link rel="icon" type="image/x-icon" href="../frontend/Source/image/favicon/login.png">
 </head>
 
 <body>
 	<div class="container">
 		<center>
-			<a href="index.html" id="logo_menu"><img src="../Source/image/logo.png" alt="logo da loja" width="110px"
+			<a href="index.html" id="logo_menu"><img src="../frontend/Source/image/logo.png" alt="logo da loja" width="110px"
 					height="110px"></a>
 		</center>
 
@@ -20,14 +20,14 @@
 			<input type="text" placeholder="Usuário" name="username">
 			<input type="password" placeholder="Senha" name="password" id="password">
 			<span onclick="togglePasswordVisibility()">
-				<img src="Source/image/ocultar.png" style="margin: 5px; width: 15px;" id="icone">
+				<img src="/frontend/Source/image/ocultar.png" style="margin: 5px; width: 15px;" id="icone">
 				<p>Mostrar senha</p>
 			</span>
 			</br>
 			<button id="btnRedirect" type="button" onclick="connectDatabase()">Login</button>
 		</form>
 	</div>
-	<script src="script.js"></script>
+	<script src="frontend/Source/js/script.js"></script>
 </body>
 
 </html>

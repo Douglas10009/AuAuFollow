@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f1f1f1;
-  background-image: url("/Source/image/bbc_prod.png");
+  background-image: url("../image/bbc_prod.png");
   margin: 0;
   padding: 0;
 }

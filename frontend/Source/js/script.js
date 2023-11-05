@@ -20,7 +20,7 @@ function togglePasswordVisibility() {
 // Event listener para o botão
 document.getElementById('btnRedirect').addEventListener('click', function () {
 	console.log(window.location.href);
-	window.location.href = "principal.html";
+	window.location.href = "/frontend/principal.html";
 	console.log(window.location.href);
 });
 
