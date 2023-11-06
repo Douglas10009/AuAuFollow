@@ -1,10 +1,10 @@
 // visibilidade da senha
 function togglePasswordVisibility() {
-	var passwordInput = document.getElementById("password");
+	var passwordInput = document.getElementById("senha");
 	var icone = document.getElementById("icone");
 	var p = document.querySelector("span > p");
 
-	//Caso o tipo do input seja password (ocultado -> visível)
+	//Caso o tipo do input seja senha (ocultado -> visível)
 	if (passwordInput.type === "password") {
 		passwordInput.type = "text";
 		icone.src = "/frontend/Source/image/visivel.png";
@@ -12,9 +12,10 @@ function togglePasswordVisibility() {
 
 		//Caso o tipo do input seja text (visivel -> ocultado)
 	} else {
-		passwordInput.type = "password";
+		passwordInput.type = "text";
 		icone.src = "/frontend/Source/image/ocultar.png";
 		p.textContent = "Mostrar senha"
+
 	}
 }
 
@@ -33,29 +34,35 @@ const fetchClientes = async () => {
 
 document.getElementById('btnRedirect').addEventListener('click', async (event) => {
 	event.preventDefault();
-	const clientes = await fetchClientes();
 
-	var exists = false;
+	try {
+		const clientes = await fetchClientes();
 
-	clientes.forEach(cliente => {
-		const { email, senha } = cliente;
-		console.log(cliente); // Apagar isso
+		var exists = false;
 
-		if (document.getElementById('email').value === email && document.getElementById('senha').value === senha) {
-			exists = true;
-		} 
-	});
+		clientes.forEach(cliente => {
+			const { email, senha } = cliente;
+			console.log(cliente); // Apagar isso
 
-	if (exists) {
-		alert('Login correto')
+			if (document.getElementById('email').value === email && document.getElementById('senha').value === senha) {
+				exists = true;
+			}
+		});
 
-		document.getElementById('email').value = ""
-		document.getElementById('senha').value = ""
+		if (exists) {
+			alert('Login correto')
 
-		window.location.href = "/frontend/principal.html";
+			document.getElementById('email').value = ""
+			document.getElementById('senha').value = ""
 
-	} else {
-		alert('Email ou senha incorretos')
+			window.location.href = "/frontend/principal.html";
+
+		} else {
+			const p = document.getElementById("incorreto");
+			p.style = 'display: block;'
+		}
+	} catch (error) {
+		alert("Algo deu errado  :( \nPor favor, tente mais tarde...")
 	}
 });
 

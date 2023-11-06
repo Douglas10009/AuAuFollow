@@ -18,7 +18,11 @@
 
 		<form>
 			<input type="email" placeholder="Email" name="email" id="email" required>
-			<input type="password" placeholder="Senha" name="senha" id="senha">
+			<input type="password" placeholder="Senha" name="senha" id="senha" required>
+
+			<center>
+				<p id="incorreto" style="display: none;">Email ou senha incorretos!</p>
+			</center>
 
 			<span id="TogglePwVisibility">
 				<img src="/frontend/Source/image/ocultar.png" style="margin: 5px; width: 15px;" id="icone">

@@ -96,9 +96,9 @@ a {
 .form-conteiner {
 	justify-content: space-around;
 	align-items: center;
-	background-image: url("../image/cachorro-coracao.jfif");
-
-	height: 100%;
+	background-color: #d6e7fe;
+	height: 100vh;
+	width: 100%;
 }
 
 .formulario-form {
@@ -164,7 +164,7 @@ a {
 #main-background-imagem {
 	background-color: #DFCCF2;
 	width: 517px;
-    height: 487px;
+	height: 487px;
 	border-radius: 50%;
 
 	justify-content: center;

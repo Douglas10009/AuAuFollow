@@ -20,13 +20,20 @@ body {
   margin-bottom: 20px;
 }
 
-.container input[type="text"],
+.container input[type="email"],
 .container input[type="password"] {
   width: 379px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+}
+
+.container center p {
+  text-align: center;
+  font-weight: lighter;
+  font-stretch: semi-condensed;
+  color: rgb(217, 14, 14);
 }
 
 .container button {
@@ -44,14 +51,14 @@ body {
   transition: 0.7s;
 }
 
-span{
-	cursor: pointer;
+span {
+  cursor: pointer;
 }
 
-p{
-	display: inline;
+p {
+  display: inline;
 }
 
-button{
-	margin: 10px;
+button {
+  margin: 10px;
 }
