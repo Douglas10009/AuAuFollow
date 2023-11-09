@@ -6,7 +6,7 @@ Siga as etapas abaixo para instalar e configurar o projeto:
 
 2. Faça as alterações necessárias no arquivo `package.json`. Consulte o arquivo `scripts.txt` para obter informações sobre os scripts disponíveis.
 
-3. Crie o banco de dados necessário para o projeto. Certifique-se de ter o MySQL instalado e em execução.
+3. Crie o banco de dados necessário para o projeto (Verifique /backend/Banco de Dados). Certifique-se de ter o MySQL instalado e em execução.
 
 4. Renomeie o arquivo `.env.example` para `.env` e preencha as informações necessárias no arquivo. Este arquivo contém as configurações do ambiente, como as credenciais do banco de dados.
 
