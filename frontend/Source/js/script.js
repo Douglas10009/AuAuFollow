@@ -27,7 +27,7 @@ pwVisibility.addEventListener('click', togglePasswordVisibility);
 // Acesso aos clientes
 
 const fetchClientes = async () => {
-	const response = await fetch('http://localhost:8080/clientes');
+	const response = await fetch('http://192.168.101.6:8080/clientes');
 	const clientes = response.json();
 	return clientes
 }

@@ -1,6 +1,6 @@
 CREATE DATABASE if not EXISTS auaufollow;
 
-USE auaufollow 
+USE auaufollow;
 
 CREATE TABLE
     IF NOT EXISTS clientes(
